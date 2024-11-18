@@ -1,0 +1,233 @@
+<!--
+Name: Noah
+Course: PTEC 
+Teacher: Ms. Hoitink
+School: PTC
+Date Last Modified: November 14, 2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Link to external CSS file for additional styling -->
+    <link rel="stylesheet" href="styles.css"/>
+
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport setting for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage, displayed on the browser tab -->
+    <title>Your HTML Page</title>
+
+    <style>
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styles for body and overall typography */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0000aa;
+            color: #008080;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #00ffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        
+        nav ul li a {
+            color: rgb(0, 100, 100);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        /* Hover effect for navigation links */
+        nav ul li a:hover {
+            background-color: #000000;
+            color: #00aaaa;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Styling for main heading */
+        header h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Main Content Styling */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-container {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #00aaaa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section-container h2 {
+            font-size: 28px;
+            color: #000000;
+            margin-bottom: 15px;
+        }
+
+        .section-container p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        /* Centering and styling images in sections */
+        .section-container img {
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 5px;
+        }
+
+        /* Caption styling under images */
+        figcaption {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            color: #000000;
+        }
+
+        /* Link Styling */
+        a {
+            color: rgb(0, 255, 0);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer iframe styling */
+        .video-container iframe {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        /* Custom styles for <span> elements */
+        .highlight {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        .important {
+            color: #000000;
+            font-style: italic;
+        }
+
+        /* Responsive Design adjustments for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            .section-container {
+                padding: 10px;
+            }
+
+            .section-container h2 {
+                font-size: 22px;
+            }
+
+            .video-container iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section containing navigation and main heading -->
+    <header>
+        <!-- Navigation bar with links -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#details">Details</a></li>
+            </ul>
+        </nav>
+        <!-- Main heading of the page -->
+        <h1><span class="highlight">Treaty #1</span></h1>
+    </header>
+
+    <!-- Main content of the page, grouped within a div for easy styling -->
+    <div class="content">
+        <!-- Section with a map of Treaty 1 -->
+        <section class="section-container" aria-labelledby="treaty-map">
+            <h2 id="treaty-map"><span class="highlight">Treaty 1</span> map</h2>
+            <figure>
+                <!-- Image of Treaty 1 map -->
+                <img src="treatymap.jpg" alt="Treaty 1 map" width="450" height="400" />
+                <figcaption>Source: <a href="https://scoinc.mb.ca/treaties/">https://scoinc.mb.ca/treaties/</a></figcaption>
+            </figure>
+        </section>
+
+        <!-- Section with details about Treaty 1 -->
+        <section class="section-container" aria-labelledby="details">
+            <h2 id="details">Details of <span class="highlight">Treaty 1</span></h2>
+            <p>Click below to go to the details page:</p>
+            <a href="details.html">Go to details Page</a>
+            <p><span class="important">Treaty 1</span> was entered into by <span class="note">Brokenhead, Sagkeeng, Long Plain, Peguis, Roseau River, Sandy Bay,</span> and <span class="note">Swan Lake First Nations</span>.</p>
+            <p><span class="highlight">Treaty 1</span> was signed in <span class="important">Lower Fort Gary</span> in 1871.</p>
+        </section>
+
+        <!-- Section with a map of Lower Fort Gary -->
+        <section class="section-container" aria-labelledby="fort-map">
+            <h2 id="fort-map">Lower Fort Gary map</h2>
+            <figure>
+                <!-- Image of Lower Fort Gary -->
+                <img src="fortgary.jpg" alt="Lower Fort Gary" width="600" height="400" />
+                <figcaption>Source: <a href="https://conprocanada.ca/project/lower-fort-garry-historic-site-fire-protection-systems-and-building-repairs/">https://conprocanada.ca</a></figcaption>
+            </figure>
+        </section>
+    </div>
+
+    <!-- Video section embedded within a div for organization and styling -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SVaK9rAV32A?si=qaoE8kOovdvd9yAJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption>Source: <a href="https://www.youtube.com/watch?v=SVaK9rAV32A">https://www.youtube.com/watch?v=SVaK9rAV32A</a></figcaption>
+    </div>
+
+</body>
+</html>

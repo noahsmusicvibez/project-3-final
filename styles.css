@@ -1,0 +1,154 @@
+   /* Basic reset for margin and padding */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for body and overall typography */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0000aa;
+    color: #008080;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #00ffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: rgb(0, 100, 100);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #000000;
+    color: #00aaaa;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styling for main heading */
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+/* Main Content Styling */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-container {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #00aaaa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section-container h2 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.section-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+/* Centering and styling images in sections */
+.section-container img {
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 5px;
+}
+
+/* Caption styling under images */
+figcaption {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #000000;
+}
+
+/* Link Styling */
+a {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer iframe styling */
+.video-container iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Custom styles for <span> elements */
+.highlight {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.important {
+    color: #000000;
+    font-style: italic;
+}
+
+/* Responsive Design adjustments for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .section-container {
+        padding: 10px;
+    }
+
+    .section-container h2 {
+        font-size: 22px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
